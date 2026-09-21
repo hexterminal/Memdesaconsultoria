@@ -35,8 +35,11 @@
 
     selector.addEventListener('change', function () {
       const nextPage = this.value;
-      if (nextPage) {
-        window.location.href = nextPage;
+      if (!nextPage) return;
+
+      const targetUrl = new URL(nextPage, window.location.href);
+      if (targetUrl.origin === window.location.origin && /\.html$/i.test(targetUrl.pathname)) {
+        window.location.href = targetUrl.href;
       }
     });
   }
