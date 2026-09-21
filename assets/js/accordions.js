@@ -3387,7 +3387,7 @@ var lastActive,
 			form = radio.form,
 			radios = $( [] );
 		if ( name ) {
-			name = name.replace( /'/g, "\\'" );
+			name = $.escapeSelector( name );
 			if ( form ) {
 				radios = $( form ).find( "[name='" + name + "'][type=radio]" );
 			} else {
@@ -3973,7 +3973,7 @@ $.extend(Datepicker.prototype, {
 			inst.append.remove();
 		}
 		if (appendText) {
-			inst.append = $("<span class='" + this._appendClass + "'>" + appendText + "</span>");
+			inst.append = $("<span>").addClass(this._appendClass).text(appendText);
 			input[isRTL ? "before" : "after"](inst.append);
 		}
 
@@ -15552,7 +15552,7 @@ var tabs = $.widget( "ui.tabs", {
 	},
 
 	_sanitizeSelector: function( hash ) {
-		return hash ? hash.replace( /[!"$%&'()*+,.\/:;<=>?@\[\]\^`{|}~]/g, "\\$&" ) : "";
+		return hash ? $.escapeSelector( hash ) : "";
 	},
 
 	refresh: function() {

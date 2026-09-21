@@ -27,6 +27,17 @@
 
 }(function($) {
     'use strict';
+
+    function isSafeResourceUrl(value) {
+        if (!value) return false;
+        try {
+            var url = new URL(value, document.baseURI);
+            return url.protocol === 'http:' || url.protocol === 'https:';
+        } catch (error) {
+            return false;
+        }
+    }
+
     var Slick = window.Slick || {};
 
     Slick = (function() {
@@ -1460,6 +1471,10 @@
                     imageSource = $(this).attr('data-lazy'),
                     imageToLoad = document.createElement('img');
 
+                if (!isSafeResourceUrl(imageSource)) {
+                    return;
+                }
+
                 imageToLoad.onload = function() {
 
                     image
@@ -1648,6 +1663,12 @@
             image = $imgsToLoad.first();
             imageSource = image.attr('data-lazy');
             imageToLoad = document.createElement('img');
+
+            if (!isSafeResourceUrl(imageSource)) {
+                image.removeAttr('data-lazy').removeClass('slick-loading');
+                _.progressiveLazyLoad();
+                return;
+            }
 
             imageToLoad.onload = function() {
 

@@ -17,6 +17,16 @@
  */
 ;(function($, window, document, undefined) {
 
+	function isSafeResourceUrl(value) {
+		if (!value) return false;
+		try {
+			var url = new URL(value, document.baseURI);
+			return url.protocol === 'http:' || url.protocol === 'https:';
+		} catch (error) {
+			return false;
+		}
+	}
+
 	/**
 	 * Creates a carousel.
 	 * @class The Owl Carousel.
@@ -1436,6 +1446,8 @@
 	 */
 	Owl.prototype.preloadAutoWidthImages = function(images) {
 		images.each($.proxy(function(i, element) {
+			var source = element.getAttribute('src') || element.getAttribute('data-src') || element.getAttribute('data-src-retina');
+			if (!isSafeResourceUrl(source)) return;
 			this.enter('pre-loading');
 			element = $(element);
 			$(new Image()).one('load', $.proxy(function(e) {
@@ -1969,6 +1981,8 @@
 		$elements.each($.proxy(function(index, element) {
 			var $element = $(element), image,
                 url = (window.devicePixelRatio > 1 && $element.attr('data-src-retina')) || $element.attr('data-src') || $element.attr('data-srcset');
+
+			if (!isSafeResourceUrl(url)) return;
 
 			this._core.trigger('load', { element: $element, url: url }, 'lazy');
 
