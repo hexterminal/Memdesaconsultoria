@@ -27,6 +27,20 @@
 		}
 	}
 
+	function isSafeSrcsetValue(value) {
+		if (!value) return false;
+		var candidates = value.split(',');
+		for (var i = 0; i < candidates.length; i++) {
+			var candidate = candidates[i].trim();
+			if (!candidate) return false;
+			var parts = candidate.split(/\s+/);
+			if (!parts[0] || !isSafeResourceUrl(parts[0])) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 	/**
 	 * Creates a carousel.
 	 * @class The Owl Carousel.
@@ -1980,22 +1994,26 @@
 
 		$elements.each($.proxy(function(index, element) {
 			var $element = $(element), image,
-                url = (window.devicePixelRatio > 1 && $element.attr('data-src-retina')) || $element.attr('data-src') || $element.attr('data-srcset');
-
-			if (!isSafeResourceUrl(url)) return;
+				srcRetina = (window.devicePixelRatio > 1 && $element.attr('data-src-retina')),
+				src = $element.attr('data-src'),
+				srcset = $element.attr('data-srcset'),
+				url = srcRetina || src || srcset;
 
 			this._core.trigger('load', { element: $element, url: url }, 'lazy');
 
 			if ($element.is('img')) {
+				if (!isSafeResourceUrl(url)) return;
 				$element.one('load.owl.lazy', $.proxy(function() {
 					$element.css('opacity', 1);
 					this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
 				}, this)).attr('src', url);
             } else if ($element.is('source')) {
+				if (!isSafeSrcsetValue(url)) return;
                 $element.one('load.owl.lazy', $.proxy(function() {
                     this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
                 }, this)).attr('srcset', url);
 			} else {
+				if (!isSafeResourceUrl(url)) return;
 				image = new Image();
 				image.onload = $.proxy(function() {
 					$element.css({
