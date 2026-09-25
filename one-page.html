@@ -16,6 +16,7 @@
 <link href="assets/css/templatemo-finance-business.css" rel="stylesheet"/>
 <link href="assets/css/owl.css" rel="stylesheet"/>
 <link href="language-selector.css" rel="stylesheet"/>
+<link href="privacy-consent.css" rel="stylesheet"/>
 <script src="language-selector.js" defer></script>
 </head>
 <body>
@@ -175,7 +176,7 @@
 <span>Controle financeiro com método</span>
 <h2>Informações confiáveis para <em>decisões mais seguras</em></h2>
 <p>Nossa abordagem integra diagnóstico, planejamento, implementação e acompanhamento, sempre com escopo, responsabilidades e entregáveis claramente definidos.<br/><br/>O objetivo é ampliar o controle, a previsibilidade e a capacidade de decisão da empresa.</p>
-<a class="filled-button" href="">Read More</a>
+<a class="filled-button external" href="about.html">Saiba mais</a>
 </div>
 </div>
 <div class="col-md-6 align-self-center">
@@ -324,30 +325,15 @@
 <ul class="menu-list"><li><a href="services.html">Assistência financeira</a></li><li><a href="services.html">Consultoria e gestão</a></li><li><a href="services.html">Tecnologia e capacitação</a></li><li><a href="services.html">Contratos e obras</a></li></ul>
 </div>
 <div class="col-md-3 footer-item">
-  <h4>Navegação</h4>
-
-  <ul class="menu-list">
-    <li>
-      <a href="index.html">Início</a>
-    </li>
-
-    <li>
-      <a href="about.html">Sobre nós</a>
-    </li>
-
-    <li>
-      <a href="services.html">Nossas soluções</a>
-    </li>
-
-    <li>
-      <a href="contact.html">Contato</a>
-    </li>
-
-    <li>
-      <a href="politica-de-privacidade.html#pt">Política de Privacidade</a>
-      </a>
-    </li>
-  </ul>
+<h4>Navegação</h4>
+<ul class="menu-list">
+<li><a href="index.html">Início</a></li>
+<li><a href="about.html">Sobre nós</a></li>
+<li><a href="services.html">Nossas soluções</a></li>
+<li><a href="contact.html">Contato</a></li>
+<li><a href="politica-de-privacidade.html#pt" rel="privacy-policy">Política de Privacidade</a></li>
+<li><button class="footer-privacy-button" id="open-privacy-preferences" type="button">Preferências de privacidade</button></li>
+</ul>
 </div>
 <div class="col-md-3 footer-item last-item">
 <h4>Fale conosco</h4>
@@ -393,19 +379,21 @@
 <!--<a class="whatsapp-float" href="https://wa.me/5511999999999" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
   <i class="fa fa-whatsapp"></i>
 </a> -->
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6ab4612be84b8134496f236b/1k389n53l';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+<!-- Aviso independente de privacidade e consentimento -->
+<div id="privacy-consent" class="privacy-consent" role="dialog" aria-modal="false" aria-labelledby="privacy-consent-title" aria-describedby="privacy-consent-description" hidden>
+  <div class="privacy-consent__content">
+    <h2 id="privacy-consent-title">Privacidade e cookies</h2>
+    <p id="privacy-consent-description">Este site utiliza cookies e tecnologias semelhantes para disponibilizar o atendimento por chat, que poderá contar com inteligência artificial, analisar a navegação e melhorar sua experiência. Você pode aceitar todos os recursos ou utilizar somente os necessários.</p>
+    <p class="privacy-consent__details">Não envie pelo chat senhas, dados bancários, documentos financeiros confidenciais ou dados pessoais sensíveis.</p>
+    <a class="privacy-consent__policy" href="politica-de-privacidade.html#pt" rel="privacy-policy">Consulte nossa Política de Privacidade</a>
+    <div class="privacy-consent__actions">
+      <button id="privacy-necessary" class="privacy-consent__button privacy-consent__button--secondary" type="button">Somente necessários</button>
+      <button id="privacy-accept" class="privacy-consent__button privacy-consent__button--primary" type="button">Aceitar todos</button>
+    </div>
+  </div>
+</div>
+<!-- Fim do aviso de privacidade -->
+<script src="privacy-consent.js" defer></script>
 <!-- Bootstrap core JavaScript -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>

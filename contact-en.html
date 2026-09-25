@@ -16,6 +16,7 @@
 <link href="assets/css/templatemo-finance-business.css" rel="stylesheet"/>
 <link href="assets/css/owl.css" rel="stylesheet"/>
 <link href="language-selector.css" rel="stylesheet"/>
+<link href="privacy-consent.css" rel="stylesheet"/>
 <script src="language-selector.js" defer></script>
 <link href="contact.html" hreflang="pt" rel="alternate"/><link href="contact-en.html" hreflang="en" rel="alternate"/><link href="contact-es.html" hreflang="es" rel="alternate"/><link href="contact.html" hreflang="x-default" rel="alternate"/></head>
 <body>
@@ -151,7 +152,7 @@
 	3. Click "Share" and choose "Embed map" tab
 	4. Copy only URL and paste it within the src="" field below
 -->
-<iframe allowfullscreen="" frameborder="0" height="500px" loading="lazy" src="https://maps.google.com/maps?q=S%C3%A3o+Paulo,+SP,+Brasil&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="border:0" title="Localização de atendimento em São Paulo - SP" width="100%"></iframe>
+<iframe allowfullscreen="" frameborder="0" height="500px" loading="lazy" src="https://maps.google.com/maps?q=S%C3%A3o+Paulo,+SP,+Brasil&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="border:0" title="Service location in São Paulo, Brazil" width="100%"></iframe>
 </div>
 <!-- Footer Starts Here -->
 <footer>
@@ -167,10 +168,14 @@
 </div>
 <div class="col-md-3 footer-item">
 <h4>Navigation</h4>
-<ul class="menu-list"><li><a href="index-en.html">Home</a></li><li><a href="about-en.html">About Us</a></li><li><a href="services-en.html">Our Solutions</a></li><li><a href="contact-en.html">Contact</a></li>    <li>
-      <a href="politica-de-privacidade.html">Privacy Policy</a>
-      </a>
-    </li></ul>
+<ul class="menu-list">
+<li><a href="index-en.html">Home</a></li>
+<li><a href="about-en.html">About Us</a></li>
+<li><a href="services-en.html">Our Solutions</a></li>
+<li><a href="contact-en.html">Contact</a></li>
+<li><a href="politica-de-privacidade.html#en" rel="privacy-policy">Privacy Policy</a></li>
+<li><button class="footer-privacy-button" id="open-privacy-preferences" type="button">Privacy preferences</button></li>
+</ul>
 </div>
 <div class="col-md-3 footer-item last-item">
 <h4>Contact Us</h4>
@@ -179,7 +184,7 @@
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12">
 <fieldset>
-<input autocomplete="name" class="form-control" id="footer-contact-name" name="name" placeholder="Nome completo" required="" type="text"/>
+<input autocomplete="name" class="form-control" id="footer-contact-name" name="name" placeholder="Full name" required="" type="text"/>
 </fieldset>
 </div>
 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -189,7 +194,7 @@
 </div>
 <div class="col-lg-12">
 <fieldset>
-<textarea class="form-control" id="footer-contact-message" name="message" placeholder="Descreva brevemente sua necessidade" required="" rows="6"></textarea>
+<textarea class="form-control" id="footer-contact-message" name="message" placeholder="Briefly describe your needs" required="" rows="6"></textarea>
 </fieldset>
 </div>
 <div class="col-lg-12">
@@ -216,19 +221,21 @@
 <!--<a class="whatsapp-float" href="https://wa.me/5511999999999" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
   <i class="fa fa-whatsapp"></i>
 </a> -->
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6ab4612be84b8134496f236b/1k389n53l';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+<!-- Aviso independente de privacidade e consentimento -->
+<div id="privacy-consent" class="privacy-consent" role="dialog" aria-modal="false" aria-labelledby="privacy-consent-title" aria-describedby="privacy-consent-description" hidden>
+  <div class="privacy-consent__content">
+    <h2 id="privacy-consent-title">Privacy and cookies</h2>
+    <p id="privacy-consent-description">This website uses cookies and similar technologies to provide live-chat support, which may include artificial intelligence, analyze website usage, and improve your experience. You may accept all features or use only those that are necessary.</p>
+    <p class="privacy-consent__details">Do not submit passwords, banking information, confidential financial documents, or sensitive personal data through the chat.</p>
+    <a class="privacy-consent__policy" href="politica-de-privacidade.html#en" rel="privacy-policy">Read our Privacy Policy</a>
+    <div class="privacy-consent__actions">
+      <button id="privacy-necessary" class="privacy-consent__button privacy-consent__button--secondary" type="button">Necessary only</button>
+      <button id="privacy-accept" class="privacy-consent__button privacy-consent__button--primary" type="button">Accept all</button>
+    </div>
+  </div>
+</div>
+<!-- Fim do aviso de privacidade -->
+<script src="privacy-consent.js" defer></script>
 <!-- Bootstrap core JavaScript -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
