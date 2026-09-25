@@ -16,6 +16,7 @@
 <link href="assets/css/templatemo-finance-business.css" rel="stylesheet"/>
 <link href="assets/css/owl.css" rel="stylesheet"/>
 <link href="language-selector.css" rel="stylesheet"/>
+<link href="privacy-consent.css" rel="stylesheet"/>
 <script src="language-selector.js" defer></script>
 <link href="index.html" hreflang="pt" rel="alternate"/><link href="index-en.html" hreflang="en" rel="alternate"/><link href="index-es.html" hreflang="es" rel="alternate"/><link href="index.html" hreflang="x-default" rel="alternate"/></head>
 <body>
@@ -33,7 +34,9 @@
 <div class="container">
 <div class="row">
 <div class="col-md-8 col-xs-12">
-<ul class="left-info"><li><a href="mailto:faleconosco@ratioconsilium.com.br"><i class="fa fa-envelope"></i>faleconosco@ratioconsilium.com.br</a></li><li><a href="contact-es.html"><i class="fa fa-map-marker"></i>São Paulo, Brasil</a></li></ul>
+<ul class="left-info"><li><a href="mailto:faleconosco@ratioconsilium.com.br"><i class="fa fa-envelope"></i>faleconosco@ratioconsilium.com.br</a></li><li><a href="contact-es.html"><i class="fa fa-map-marker"></i>São Paulo, Brasil</a></li>
+<li><a href="politica-de-privacidade.html#es" rel="privacy-policy">Política de Privacidad</a></li>
+<li><button class="footer-privacy-button" id="open-privacy-preferences" type="button">Preferencias de privacidad</button></li></ul>
 </div>
 <div class="col-md-4">
 </div>
@@ -322,10 +325,7 @@
 </div>
 <div class="col-md-3 footer-item">
 <h4>Navegación</h4>
-<ul class="menu-list"><li><a href="index-es.html">Inicio</a></li><li><a href="about-es.html">Quiénes somos</a></li><li><a href="services-es.html">Nuestras soluciones</a></li><li><a href="contact-es.html">Contacto</a></li>    <li>
-      <a href="politica-de-privacidade.html">Política de Privacidad</a>
-      </a>
-    </li>
+<ul class="menu-list"><li><a href="index-es.html">Inicio</a></li><li><a href="about-es.html">Quiénes somos</a></li><li><a href="services-es.html">Nuestras soluciones</a></li><li><a href="contact-es.html">Contacto</a></li>
 </ul>
 </div>
 <div class="col-md-3 footer-item last-item">
@@ -345,7 +345,7 @@
 </div>
 <div class="col-lg-12">
 <fieldset>
-<textarea class="form-control" id="footer-contact-message" name="message" placeholder="Como podemos ajudar?" required="" rows="6"></textarea>
+<textarea class="form-control" id="footer-contact-message" name="message" placeholder="¿Cómo podemos ayudarle?" required="" rows="6"></textarea>
 </fieldset>
 </div>
 <div class="col-lg-12">
@@ -372,19 +372,21 @@
 <!--<a class="whatsapp-float" href="https://wa.me/5511999999999" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
   <i class="fa fa-whatsapp"></i>
 </a> -->
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6ab4612be84b8134496f236b/1k389n53l';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+<!-- Aviso independente de privacidade e consentimento -->
+<div id="privacy-consent" class="privacy-consent" role="dialog" aria-modal="false" aria-labelledby="privacy-consent-title" aria-describedby="privacy-consent-description" hidden>
+  <div class="privacy-consent__content">
+    <h2 id="privacy-consent-title">Privacidad y cookies</h2>
+    <p id="privacy-consent-description">Este sitio utiliza cookies y tecnologías similares para ofrecer atención por chat, que podrá contar con inteligencia artificial, analizar la navegación y mejorar su experiencia. Puede aceptar todos los recursos o utilizar únicamente los necesarios.</p>
+    <p class="privacy-consent__details">No envíe por el chat contraseñas, datos bancarios, documentos financieros confidenciales ni datos personales sensibles.</p>
+    <a class="privacy-consent__policy" href="politica-de-privacidade.html#es" rel="privacy-policy">Consulte nuestra Política de Privacidad</a>
+    <div class="privacy-consent__actions">
+      <button id="privacy-necessary" class="privacy-consent__button privacy-consent__button--secondary" type="button">Solo necesarios</button>
+      <button id="privacy-accept" class="privacy-consent__button privacy-consent__button--primary" type="button">Aceptar todos</button>
+    </div>
+  </div>
+</div>
+<!-- Fim do aviso de privacidade -->
+<script src="privacy-consent.js" defer></script>
 <!-- Bootstrap core JavaScript -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
