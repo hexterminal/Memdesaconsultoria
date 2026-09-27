@@ -1,8 +1,24 @@
 (function () {
+  'use strict';
+
   const selectorId = 'language-selector';
 
   function normalizePath(path) {
-    return (path || '').split('/').pop();
+    const fileName = (path || '').split('/').pop();
+    return fileName || 'index.html';
+  }
+
+  function closeMobileMenu() {
+    const navbar = document.getElementById('navbarResponsive');
+    if (!navbar) return;
+
+    navbar.classList.remove('show');
+
+    const toggle = document.querySelector('[data-target="#navbarResponsive"]');
+    if (toggle) {
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.classList.add('collapsed');
+    }
   }
 
   function setupLanguageSelector() {
@@ -10,23 +26,11 @@
     if (!selector) return;
 
     const currentPage = normalizePath(window.location.pathname);
-    let matchedOption = null;
+    const normalizedCurrent = currentPage.replace(/\.html$/i, '');
 
-    Array.from(selector.options).some((option) => {
+    const matchedOption = Array.from(selector.options).find(function (option) {
       const optionValue = normalizePath(option.value);
-      if (optionValue === currentPage) {
-        matchedOption = option;
-        return true;
-      }
-
-      const normalizedCurrent = currentPage.replace(/\.(html)$/i, '');
-      const normalizedOption = optionValue.replace(/\.(html)$/i, '');
-      if (normalizedOption === normalizedCurrent) {
-        matchedOption = option;
-        return true;
-      }
-
-      return false;
+      return optionValue === currentPage || optionValue.replace(/\.html$/i, '') === normalizedCurrent;
     });
 
     if (matchedOption) {
@@ -38,9 +42,13 @@
       if (!nextPage) return;
 
       const targetUrl = new URL(nextPage, window.location.href);
-      if (targetUrl.origin === window.location.origin && /\.html$/i.test(targetUrl.pathname)) {
-        window.location.href = targetUrl.href;
-      }
+      const isSameOrigin = targetUrl.origin === window.location.origin;
+      const isHtmlPage = /(?:\/|\.html)$/i.test(targetUrl.pathname);
+
+      if (!isSameOrigin || !isHtmlPage) return;
+
+      closeMobileMenu();
+      window.location.assign(targetUrl.href);
     });
   }
 
