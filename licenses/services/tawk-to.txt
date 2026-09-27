@@ -1,0 +1,25 @@
+Provider: tawk.to inc.
+Service: live-chat support
+Terms: https://www.tawk.to/terms-of-service/
+Privacy policy: https://www.tawk.to/privacy-policy/
+Verified: 2026-09-27
+
+Account ownership:
+The account was registered for Mem de Sa Ratio Consilium by the company.
+
+Purpose in this website:
+Provide live-chat support after the visitor's applicable consent.
+
+Data potentially processed:
+- conversation content;
+- name and email, when voluntarily supplied;
+- IP address and browser/device data;
+- session, cookie, and local-storage data needed by the service.
+
+Internal controls to verify:
+Account holder: Mem de Sa Ratio Consilium
+Artificial intelligence features: enabled
+Conversation retention: 30d
+Privacy notice in chat: confirmed
+Export procedure: pending
+Deletion procedure: confirmed 

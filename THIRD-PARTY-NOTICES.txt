@@ -1,0 +1,128 @@
+THIRD-PARTY NOTICES
+Mem de Sa Ratio Consilium institutional website
+Inventory verified: 2026-09-27
+
+This file records third-party software, fonts, templates, images, data sources,
+and online services used by the website. Inclusion here does not transfer
+ownership of third-party material to Mem de Sa Ratio Consilium.
+
+OPEN-SOURCE SOFTWARE
+
+1. Bootstrap 4.6.2
+   Purpose: responsive layout, components, and navigation.
+   License: MIT.
+   Official source: https://github.com/twbs/bootstrap/blob/main/LICENSE
+   Local notice: licenses/bootstrap-MIT.txt
+
+2. jQuery 3.7.1
+   Purpose: JavaScript dependency used by Bootstrap and interface plugins.
+   License: MIT.
+   Official source: https://github.com/jquery/jquery/blob/main/LICENSE.txt
+   Local notice: licenses/jquery-MIT.txt
+
+3. jQuery UI 1.14.1
+   Purpose: service-page tabs.
+   License: MIT; demo sample code has separate CC0 treatment upstream.
+   Official source: https://github.com/jquery/jquery-ui/blob/main/LICENSE.txt
+   Local notice: licenses/jquery-ui-MIT.txt
+
+4. Owl Carousel 2.3.4
+   Purpose: carousel components.
+   License: MIT.
+   Official source: https://github.com/OwlCarousel2/OwlCarousel2/blob/develop/LICENSE
+   Local notice: licenses/owl-carousel-MIT.txt
+
+5. Slick Carousel 1.8.1
+   Purpose: home-page slider.
+   License: MIT.
+   Official source: https://github.com/kenwheeler/slick/blob/master/LICENSE
+   Local notice: licenses/slick-MIT.txt
+
+6. Font Awesome 4
+   Purpose: interface icons.
+   Code license: MIT.
+   Font license: SIL Open Font License 1.1.
+   Official source: https://fontawesome.com/v4/license/
+   Local notices: licenses/font-awesome-code-MIT.txt and
+                  licenses/font-awesome-font-OFL-1.1.txt
+
+7. Poppins
+   Purpose: website typography.
+   Source: https://fonts.google.com/specimen/Poppins
+   License: SIL Open Font License 1.1, subject to the exact OFL file distributed
+            with the selected font package.
+   Local notice: licenses/poppins-OFL-1.1.txt
+
+TEMPLATE
+
+8. Finance Business Template 545
+   Provider: TemplateMo.
+   Purpose: initial layout base, subsequently customized.
+   Permission documented by provider: commercial/non-commercial use,
+   modification, and removal of credit links during editing.
+   Source: https://templatemo.com/tm-545-finance-business
+   Provider information: https://templatemo.com/about
+   Local record: licenses/templatemo-finance-business.txt
+
+IMAGES
+
+9. Unsplash photographs
+   Purpose: illustrative website imagery.
+   License: Unsplash License.
+   License: https://unsplash.com/license
+   Terms: https://unsplash.com/terms
+   Register: licenses/images-register.csv
+   Note: complete each photographer name and individual image URL. The license
+   does not automatically grant rights in depicted trademarks, artworks, or
+   recognizable persons.
+
+
+10. Pexels photographs and videos
+    Purpose: illustrative website imagery, when applicable.
+    License: Pexels License.
+    License: https://www.pexels.com/license/
+    Local record: licenses/pexels-license.txt
+    Register: licenses/images-register.csv
+    Note: complete each photographer name and individual asset URL. Do not imply
+    endorsement by depicted people or brands, and do not use Pexels content as
+    a trademark, trade name, business name, design mark, or service mark.
+
+EXTERNAL SERVICES AND DATA
+
+11. FormSubmit
+    Purpose: form forwarding by email.
+    Website: https://formsubmit.co/
+    Privacy/terms document: https://formsubmit.co/privacy.pdf
+    Local record: licenses/services/formsubmit.txt
+
+12. tawk.to
+    Purpose: consent-based live chat.
+    Terms: https://www.tawk.to/terms-of-service/
+    Privacy: https://www.tawk.to/privacy-policy/
+    Local record: licenses/services/tawk-to.txt
+
+13. Google Charts
+    Purpose: indicator charts.
+    Terms: https://developers.google.com/chart/terms
+    Local record: licenses/services/google-charts.txt
+
+14. Google Maps
+    Purpose: embedded location map.
+    Documentation: https://developers.google.com/maps/documentation/embed/embedding-map
+    Additional terms: https://www.google.com/intl/pt-BR_ALL/help/terms_maps/
+    Local record: licenses/services/google-maps.txt
+
+15. Banco Central do Brasil open data
+    Purpose: public economic indicators.
+    Portal: https://opendata.bcb.gov.br/pt_BR/
+    Local record: licenses/services/banco-central-dados-abertos.txt
+
+MAINTENANCE
+
+- Keep original copyright and license notices inside vendor files.
+- Do not replace upstream license files with summaries when software or fonts
+  are stored locally.
+- Review service terms periodically because online-service terms can change.
+- Complete the image register with accurate individual photo URLs and authors.
+- Update this notice whenever a dependency, service, font, image, or template
+  is added, removed, or upgraded.

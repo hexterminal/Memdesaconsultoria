@@ -1,0 +1,9 @@
+Component: Poppins font family
+Source: https://fonts.google.com/specimen/Poppins
+License: SIL Open Font License 1.1, subject to the license file distributed with the selected font package
+Verified: 2026-09-27
+
+If Poppins is self-hosted, download the desired font files from the official
+Google Fonts or upstream Poppins distribution and place the exact OFL.txt file
+that accompanies that package in this directory. Keep that original license
+file with every redistributed copy of the font.

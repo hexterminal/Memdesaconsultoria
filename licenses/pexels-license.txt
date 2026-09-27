@@ -1,0 +1,25 @@
+Provider: Pexels
+Content: stock photographs and videos
+License: Pexels License
+License URL: https://www.pexels.com/license/
+Verified: 2026-09-27
+
+Permitted uses documented by Pexels:
+- free use of photos and videos;
+- commercial and non-commercial website use;
+- modification of photos and videos;
+- attribution is not required, although it is appreciated.
+
+Important restrictions documented by Pexels:
+- do not portray identifiable people negatively or offensively;
+- do not sell unaltered copies as standalone products;
+- do not imply endorsement by depicted people or brands;
+- do not redistribute or sell the content on stock-photo or wallpaper platforms;
+- do not use the content as a trademark, design mark, trade name, business name,
+  or service mark.
+
+Project controls:
+- record the photographer and individual Pexels asset URL in the image register;
+- verify depicted brands, artworks, and identifiable people before commercial use;
+- do not claim ownership of the original photograph;
+- keep evidence of the source page and access date when available.

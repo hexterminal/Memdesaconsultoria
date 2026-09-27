@@ -1,0 +1,34 @@
+Provider: Google
+Service: Google Charts
+Terms: https://developers.google.com/chart/terms
+Verified: 2026-09-27
+
+Purpose in this website:
+Render economic indicator charts on the localized home pages.
+
+Classification:
+External service governed by provider terms, not a locally redistributed open-source component.
+
+Review controls:
+- keep source attribution for economic data;
+- do not present charts as individualized financial advice;
+- review Google API terms periodically;
+- document any future change of chart provider.
+
+Loaded on:
+- index.html
+- index-en.html
+- index-es.html
+- index-zh.html
+
+Purpose:
+Render charts from public economic indicator data.
+
+Data source:
+Banco Central do Brasil.
+
+Individualized financial advice:
+No.
+
+Last functional review:
+2026-09-27

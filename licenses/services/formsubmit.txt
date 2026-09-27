@@ -1,0 +1,20 @@
+Provider: FormSubmit
+Service: HTML form submission forwarding by email
+Website: https://formsubmit.co/
+Privacy/terms document: https://formsubmit.co/privacy.pdf
+Verified: 2026-09-27
+
+Purpose in this website:
+Forward contact-form submissions to the company's designated mailbox.
+
+Data potentially processed:
+- name supplied by the visitor;
+- email address supplied by the visitor;
+- message supplied by the visitor;
+- technical request data necessary to transmit and protect the submission.
+
+Operational notes:
+- The receiving email address must be activated and controlled by the company.
+- The provider's published privacy document has an effective date of 2019-01-17.
+- Review the provider's current terms and privacy information periodically.
+- The website privacy policy should identify FormSubmit as a form-processing provider.

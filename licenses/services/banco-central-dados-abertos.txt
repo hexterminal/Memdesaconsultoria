@@ -1,0 +1,133 @@
+Provider: Banco Central do Brasil
+Service: public open-data APIs and datasets
+Portal: https://opendata.bcb.gov.br/pt_BR/
+Open-data information: https://www.bcb.gov.br/acessoinformacao/dadosabertos
+Verified: 2026-09-27
+
+Purpose in this website:
+Supply public economic indicator data.
+
+Classification:
+Public open data made available for machine processing and reuse under an open license.
+
+Review controls:
+- record the exact API endpoints and series identifiers in the project documentation;
+- identify Banco Central do Brasil as the source in the user interface;
+- provide observation date and retrieval date when available;
+- warn that public data can be revised or temporarily unavailable.
+
+INDICATORS USED BY THE WEBSITE
+
+1. SELIC target rate
+
+Official name:
+Taxa de juros - Meta Selic definida pelo Copom
+
+SGS series identifier:
+432
+
+Unit:
+Percent per year
+
+Periodicity:
+Daily time series
+
+API base:
+https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados
+
+Use on the website:
+Current value and recent historical chart.
+
+2. IPCA accumulated in the year
+
+Official indicator:
+Índice Nacional de Preços ao Consumidor Amplo - IPCA
+
+SGS series identifier:
+433
+
+Original series unit:
+Monthly percentage variation
+
+Website processing:
+The website retrieves the monthly IPCA variations published for the
+current calendar year and calculates the compounded year-to-date result.
+
+Calculation:
+[(1 + rate_1/100) × (1 + rate_2/100) × ... ×
+(1 + latest_rate/100) - 1] × 100
+
+Periodicity:
+Monthly
+
+API base:
+https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados
+
+Displayed value:
+Accumulated IPCA from January through the latest available month.
+
+Chart:
+Evolution of the compounded year-to-date IPCA.
+
+Important note:
+The displayed accumulated value is calculated by the website from the
+official monthly series. It is not copied directly from a separate
+12-month accumulated series.
+
+3. United States dollar
+
+Service:
+Banco Central do Brasil PTAX OData service
+
+OData operation:
+CotacaoMoedaPeriodo
+
+Currency:
+USD
+
+Value field:
+cotacaoVenda
+
+Requested period:
+Previous 30 days
+
+Use on the website:
+Latest available PTAX selling quotation and recent historical chart.
+
+4. Euro
+
+Service:
+Banco Central do Brasil PTAX OData service
+
+OData operation:
+CotacaoMoedaPeriodo
+
+Currency:
+EUR
+
+Value field:
+cotacaoVenda
+
+Requested period:
+Previous 30 days
+
+Use on the website:
+Latest available PTAX selling quotation and recent historical chart.
+
+COMMON NOTES
+
+Source:
+Banco Central do Brasil
+
+Charting:
+Google Charts
+
+Purpose:
+Informational display only.
+
+Disclaimer:
+The indicators may be revised, delayed or temporarily unavailable.
+They do not constitute financial, accounting, investment or contracting advice.
+
+Last technical verification:
+2026-09-27

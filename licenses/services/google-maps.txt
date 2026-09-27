@@ -1,0 +1,31 @@
+Provider: Google
+Service: Google Maps embedded map
+Documentation: https://developers.google.com/maps/documentation/embed/embedding-map
+Additional terms: https://www.google.com/intl/pt-BR_ALL/help/terms_maps/
+Verified: 2026-09-27
+
+Purpose in this website:
+Display the service location on the localized contact pages.
+
+Classification:
+External service governed by Google Maps terms and legal notices.
+
+Review controls:
+- preserve provider attribution displayed by the map;
+- do not copy or extract map content for redistribution;
+- review iframe and referrer-policy requirements;
+- keep the privacy policy consistent with this external resource.
+
+Embedded on:
+- contact.html
+- contact-en.html
+- contact-es.html
+- contact-zh.html
+
+Provider attribution preserved: yes
+Google legal links visible: yes
+Map content altered to remove attribution: no
+Lazy loading enabled: yes
+Localized iframe title: yes
+Address verified: yes
+Last functional review: 2026-09-27
