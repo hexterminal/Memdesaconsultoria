@@ -8,7 +8,7 @@
 
   const SERVICES = Object.freeze({
     tawkSource: "https://embed.tawk.to/6ab4612be84b8134496f236b/1k389n53l",
-    clarityProjectId: "",
+    clarityProjectId: "yuoc5tjb2n",
     googleMeasurementId: ""
   });
 
