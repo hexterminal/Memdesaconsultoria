@@ -1,6 +1,6 @@
 THIRD-PARTY NOTICES
 Mem de Sa Ratio Consilium institutional website
-Inventory verified: 2026-09-27
+Inventory reviewed: 2026-10-23
 
 This file records third-party software, fonts, templates, images, data sources,
 and online services used by the website. Inclusion here does not transfer
@@ -53,9 +53,16 @@ OPEN-SOURCE SOFTWARE
             with the selected font package.
    Local notice: licenses/poppins-OFL-1.1.txt
 
+8. Popper.js 1.16.1
+   Purpose: positioning engine included in the Bootstrap 4.6.2 JavaScript bundle.
+   License: MIT.
+   Official source: https://github.com/popperjs/popper.js/tree/v1.16.1
+   License: https://github.com/floating-ui/floating-ui/blob/v1.16.1/LICENSE.md
+   Local notice: licenses/popper-MIT.txt
+
 TEMPLATE
 
-8. Finance Business Template 545
+9. Finance Business Template 545
    Provider: TemplateMo.
    Purpose: initial layout base, subsequently customized.
    Permission documented by provider: commercial/non-commercial use,
@@ -66,26 +73,17 @@ TEMPLATE
 
 IMAGES
 
-9. Unsplash photographs
+10. Unsplash photographs
    Purpose: illustrative website imagery.
    License: Unsplash License.
    License: https://unsplash.com/license
    Terms: https://unsplash.com/terms
    Register: licenses/images-register.csv
-   Note: complete each photographer name and individual image URL. The license
-   does not automatically grant rights in depicted trademarks, artworks, or
-   recognizable persons.
+   Note: photographer names and image references are recorded in the register.
+   The license does not automatically grant rights in depicted trademarks,
+   artworks, or recognizable persons. Template-provided background images are
+   attributed to TemplateMo in the register.
 
-
-10. Pexels photographs and videos
-    Purpose: illustrative website imagery, when applicable.
-    License: Pexels License.
-    License: https://www.pexels.com/license/
-    Local record: licenses/pexels-license.txt
-    Register: licenses/images-register.csv
-    Note: complete each photographer name and individual asset URL. Do not imply
-    endorsement by depicted people or brands, and do not use Pexels content as
-    a trademark, trade name, business name, design mark, or service mark.
 
 EXTERNAL SERVICES AND DATA
 
@@ -115,7 +113,28 @@ EXTERNAL SERVICES AND DATA
 15. Banco Central do Brasil open data
     Purpose: public economic indicators.
     Portal: https://opendata.bcb.gov.br/pt_BR/
+    Data displayed: SELIC (SGS 432), IPCA (SGS 433), and PTAX USD/EUR.
+    The indicators are consumed directly from public BCData/SGS and PTAX
+    APIs and displayed on the site; the site does not republish a downloadable
+    database.
+    The portal declares Open Data Commons Open Database License (ODbL) 1.0
+    for the SGS 432 and PTAX resources listed in the local service record and
+    publishes other SGS resources under ODbL. The specific portal resource
+    page for SGS 433 was not located; see the local record for this scope note.
+    License: https://opendatacommons.org/licenses/odbl/1-0/
+    BCData/SGS API: https://api.bcb.gov.br/dados/serie/
+    PTAX/Olinda API: https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/
+    Open-data plan:
+    https://www.bcb.gov.br/content/acessoinformacao/acesso_informacao_docs/Plano_Dados_Abertos_BC.pdf
     Local record: licenses/services/banco-central-dados-abertos.txt
+
+16. Microsoft Clarity
+    Purpose: consent-based usage analytics, heatmaps, and session recordings.
+    Provider terms: https://clarity.microsoft.com/terms
+    Provider privacy statement: https://privacy.microsoft.com/privacystatement
+    Loaded from privacy-consent.js only after the visitor accepts optional
+    services. Google Analytics remains documented in the privacy policy as a
+    planned service and is not currently configured (measurement ID empty).
 
 MAINTENANCE
 

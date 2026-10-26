@@ -15,6 +15,7 @@
       unavailable: 'Dados indisponiveis',
       loading: 'Carregando...',
       percent: function (value) { return formatNumber(value, 'pt-BR') + '% a.a.'; },
+      ipcaYear: function (value) { return formatNumber(value, 'pt-BR') + '% no ano'; },
       currency: function (value) { return 'R$ ' + formatNumber(value, 'pt-BR'); }
     },
     en: {
@@ -25,6 +26,7 @@
       unavailable: 'Data unavailable',
       loading: 'Loading...',
       percent: function (value) { return formatNumber(value, 'en-US') + '% p.a.'; },
+      ipcaYear: function (value) { return formatNumber(value, 'en-US') + '% year to date'; },
       currency: function (value) { return 'BRL ' + formatNumber(value, 'en-US'); }
     },
     es: {
@@ -35,6 +37,7 @@
       unavailable: 'Datos no disponibles',
       loading: 'Cargando...',
       percent: function (value) { return formatNumber(value, 'es-ES') + '% a.a.'; },
+      ipcaYear: function (value) { return formatNumber(value, 'es-ES') + '% en el año'; },
       currency: function (value) { return 'BRL ' + formatNumber(value, 'es-ES'); }
     },
     zh: {
@@ -45,6 +48,7 @@
       unavailable: '数据暂不可用',
       loading: '加载中...',
       percent: function (value) { return formatNumber(value, 'zh-CN') + '% 年利率'; },
+      ipcaYear: function (value) { return formatNumber(value, 'zh-CN') + '%（年内累计）'; },
       currency: function (value) { return 'BRL ' + formatNumber(value, 'zh-CN'); }
     }
   };
@@ -169,6 +173,28 @@
     return fetchJson(url).then(parseSgsSeries);
   }
 
+  function calculateCumulativeSeries(series) {
+    var cumulativeFactor = 1;
+    return series.map(function (item) {
+      cumulativeFactor *= 1 + (item.value / 100);
+      return {
+        label: item.label,
+        value: (cumulativeFactor - 1) * 100
+      };
+    });
+  }
+
+  function fetchIpcaYearToDate() {
+    var end = new Date();
+    var start = new Date(end.getFullYear(), 0, 1);
+    var url = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.433' +
+      '/dados?formato=json&dataInicial=' + encodeURIComponent(formatSgsDate(start)) +
+      '&dataFinal=' + encodeURIComponent(formatSgsDate(end));
+    return fetchJson(url)
+      .then(parseSgsSeries)
+      .then(calculateCumulativeSeries);
+  }
+
   function fetchExchangeSeries(currency) {
     var end = new Date();
     var start = new Date(end);
@@ -227,8 +253,8 @@
       fetchSgsSeries(432)
         .then(function (series) { updateCard('selic', series, text.percent); })
         .catch(function (error) { console.warn('SELIC unavailable', error); showUnavailable('selic'); }),
-      fetchSgsSeries(13522)
-        .then(function (series) { updateCard('ipca', series, text.percent); })
+      fetchIpcaYearToDate()
+        .then(function (series) { updateCard('ipca', series, text.ipcaYear); })
         .catch(function (error) { console.warn('IPCA unavailable', error); showUnavailable('ipca'); }),
       fetchExchangeSeries('USD')
         .then(function (series) { updateCard('dollar', series, text.currency); })

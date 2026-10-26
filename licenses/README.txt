@@ -4,8 +4,8 @@ Copy THIRD-PARTY-NOTICES.txt to the root of the published repository.
 Copy the licenses directory to the root of the repository.
 
 Before considering the inventory complete:
-1. Complete licenses/images-register.csv with each Unsplash photographer and
-   individual photo URL and the correct source platform (Unsplash or Pexels).
+1. Keep licenses/images-register.csv aligned with the shipped image files,
+   photographer credits, and source URLs.
 2. If Poppins or Font Awesome fonts are self-hosted, replace the summary OFL
    files with the exact OFL files distributed with the downloaded packages.
 3. Confirm the exact versions present in the final published repository.

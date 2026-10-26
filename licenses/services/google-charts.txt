@@ -1,10 +1,10 @@
 Provider: Google
 Service: Google Charts
 Terms: https://developers.google.com/chart/terms
-Verified: 2026-09-27
+Verified: 2026-10-23
 
 Purpose in this website:
-Render economic indicator charts on the localized home pages.
+Render economic indicator charts on the localized content pages.
 
 Classification:
 External service governed by provider terms, not a locally redistributed open-source component.
@@ -16,10 +16,10 @@ Review controls:
 - document any future change of chart provider.
 
 Loaded on:
-- index.html
-- index-en.html
-- index-es.html
-- index-zh.html
+- conteudos.html
+- conteudos-en.html
+- conteudos-es.html
+- conteudos-zh.html
 
 Purpose:
 Render charts from public economic indicator data.
@@ -31,4 +31,4 @@ Individualized financial advice:
 No.
 
 Last functional review:
-2026-09-27
+2026-10-23

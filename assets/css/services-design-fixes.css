@@ -1,0 +1,90 @@
+/* Ajustes adicionais. Nao alteram a ordem nem a organizacao dos blocos. */
+.single-services {
+  margin-bottom: 48px;
+}
+
+.service-deliverables,
+.service-examples {
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.service-deliverables { background: #f7f8fa; }
+.service-examples { background: #fff; }
+
+.deliverables-grid span,
+.examples-grid article {
+  display: flex;
+  align-items: center;
+  min-height: 78px;
+  line-height: 1.5;
+}
+
+.services-tools { row-gap: 12px; }
+
+.services-showcase__button,
+.services-filter,
+.services-autoplay {
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.services-showcase__button:focus-visible,
+.services-filter:focus-visible,
+.services-autoplay:focus-visible,
+.service-summary-card a:focus-visible {
+  outline: 3px solid rgba(184, 134, 11, .35);
+  outline-offset: 3px;
+}
+
+.services-showcase__button:hover { transform: translateY(-1px); }
+
+.services-contact-cta {
+  padding: 38px 0;
+  background: #0b1f3a;
+  color: #fff;
+}
+
+.services-contact-cta .services-showcase__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0;
+}
+
+.services-contact-cta .services-showcase__footer p {
+  max-width: 720px;
+  margin: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.services-contact-cta .filled-button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 767.98px) {
+  .single-services { margin-bottom: 36px; }
+
+  .service-deliverables,
+  .service-examples { padding-top: 58px; padding-bottom: 58px; }
+
+  .services-contact-cta .services-showcase__footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .services-contact-cta .services-showcase__footer p { font-size: 19px; }
+  .services-contact-cta .filled-button { white-space: normal; }
+  .deliverables-grid span,
+  .examples-grid article { min-height: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-showcase__button,
+  .services-filter,
+  .services-autoplay { transition: none; }
+}

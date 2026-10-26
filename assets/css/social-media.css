@@ -1,0 +1,120 @@
+.index-social-section {
+  padding: 80px 0;
+  background: #f7f8fa;
+}
+
+.index-social-section .hub-heading {
+  max-width: 800px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.index-social-section .hub-heading > span {
+  color: #e9ba3a;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.index-social-section .hub-heading h2 {
+  margin: 10px 0;
+  color: #0b1f3a;
+  font-size: 36px;
+}
+
+.index-social-section .hub-heading p {
+  color: #5d6673;
+}
+
+.index-social-section .social-publications-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.index-social-section .social-publication-card {
+  display: flex;
+  gap: 22px;
+  padding: 30px;
+  border: 1px solid #dce2e9;
+  border-radius: 13px;
+  background: #fff;
+  color: inherit;
+  box-shadow: 0 6px 22px rgba(11, 31, 58, .06);
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.index-social-section .social-publication-card:hover {
+  transform: translateY(-3px);
+  border-color: #b8860b;
+  color: inherit;
+}
+
+.index-social-section .social-icon {
+  display: flex;
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #0b1f3a;
+  color: #fff;
+  font-size: 28px;
+}
+
+.index-social-section .social-publication-card span {
+  color: #a87900;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.index-social-section .social-publication-card h3 {
+  margin: 7px 0;
+  color: #0b1f3a;
+  font-size: 22px;
+}
+
+.index-social-section .social-publication-card p {
+  color: #5d6673;
+  line-height: 1.7;
+}
+
+.index-social-section .social-publication-card strong {
+  color: #0b1f3a;
+  font-size: 14px;
+}
+
+.index-social-section .social-pending-note {
+  margin: 22px 0 0;
+  color: #66717d;
+  font-size: 13px;
+  text-align: center;
+}
+
+.index-social-section .social-pending-note i {
+  color: #b8860b;
+}
+
+@media (max-width: 991.98px) {
+  .index-social-section .social-publications-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .index-social-section {
+    padding: 60px 0;
+  }
+
+  .index-social-section .social-publication-card {
+    flex-direction: column;
+  }
+
+  .index-social-section .hub-heading h2 {
+    font-size: 30px;
+  }
+}

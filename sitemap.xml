@@ -7,7 +7,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://memdesacialtda.com.br/index-es.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://memdesacialtda.com.br/index-zh.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memdesacialtda.com.br/" />
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -18,7 +18,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://memdesacialtda.com.br/index-es.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://memdesacialtda.com.br/index-zh.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memdesacialtda.com.br/" />
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -29,7 +29,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://memdesacialtda.com.br/index-es.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://memdesacialtda.com.br/index-zh.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memdesacialtda.com.br/" />
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -40,7 +40,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://memdesacialtda.com.br/index-es.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://memdesacialtda.com.br/index-zh.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memdesacialtda.com.br/" />
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -177,8 +177,58 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://memdesacialtda.com.br/conteudos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://memdesacialtda.com.br/conteudos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://memdesacialtda.com.br/conteudos-en.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://memdesacialtda.com.br/conteudos-es.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://memdesacialtda.com.br/conteudos-zh.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memdesacialtda.com.br/conteudos.html" />
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://memdesacialtda.com.br/conteudos-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://memdesacialtda.com.br/conteudos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://memdesacialtda.com.br/conteudos-en.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://memdesacialtda.com.br/conteudos-es.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://memdesacialtda.com.br/conteudos-zh.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memdesacialtda.com.br/conteudos.html" />
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://memdesacialtda.com.br/conteudos-es.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://memdesacialtda.com.br/conteudos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://memdesacialtda.com.br/conteudos-en.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://memdesacialtda.com.br/conteudos-es.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://memdesacialtda.com.br/conteudos-zh.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memdesacialtda.com.br/conteudos.html" />
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://memdesacialtda.com.br/conteudos-zh.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://memdesacialtda.com.br/conteudos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://memdesacialtda.com.br/conteudos-en.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://memdesacialtda.com.br/conteudos-es.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://memdesacialtda.com.br/conteudos-zh.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memdesacialtda.com.br/conteudos.html" />
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://memdesacialtda.com.br/politica-de-privacidade.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://memdesacialtda.com.br/termos-de-uso.html</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
