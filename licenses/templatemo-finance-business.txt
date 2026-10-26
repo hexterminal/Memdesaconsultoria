@@ -2,7 +2,7 @@ Component: Finance Business Template 545
 Provider: TemplateMo
 Template page: https://templatemo.com/tm-545-finance-business
 Provider information: https://templatemo.com/about
-Verified: 2026-09-27
+Verified: 2026-10-23
 
 Documented permission:
 - The official template page states that the template is free to download,
@@ -15,6 +15,11 @@ The Mem de Sa Ratio Consilium website was substantially customized in content,
 branding, accessibility, privacy, security, internationalization, forms, and
 interactive components, using Finance Business Template 545 as its initial
 layout base.
+
+The following image assets are retained from the original template and are
+recorded in licenses/images-register.csv:
+- assets/images/fun-facts-bg.jpg
+- assets/images/page-heading-bg.jpg
 
 This record documents origin and permission. It does not claim that all source
 code in the final website was authored exclusively by the company.

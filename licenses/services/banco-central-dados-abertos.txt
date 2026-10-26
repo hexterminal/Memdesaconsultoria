@@ -2,13 +2,48 @@ Provider: Banco Central do Brasil
 Service: public open-data APIs and datasets
 Portal: https://opendata.bcb.gov.br/pt_BR/
 Open-data information: https://www.bcb.gov.br/acessoinformacao/dadosabertos
-Verified: 2026-09-27
+BC open-data plan:
+https://www.bcb.gov.br/content/acessoinformacao/acesso_informacao_docs/Plano_Dados_Abertos_BC.pdf
+Licensing review: 2026-10-23
+
+Official portal records reviewed:
+- SGS 432 (Meta Selic): https://dadosabertos.bcb.gov.br/dataset/432-taxa-de-juros---meta-selic-definida-pelo-copom/resource/719142d3-4e7f-4dea-8d17-a4b13106a4d0
+- SGS 1207 (example of SGS resource): https://dadosabertos.bcb.gov.br/dataset/1207-sgs/resource/dbb4bcc4-aa49-41c9-aae3-705220c10406
+- PTAX dataset/resource (USD): https://dadosabertos.bcb.gov.br/dataset/ec996c37-e033-4a52-8206-1c970df380c3/resource/43a16981-5a4b-47d9-b7bd-4c0c4093f994
+- PTAX exchange-rate dataset: https://dadosabertos.bcb.gov.br/dataset/taxas-de-cambio-todos-os-boletins-diarios
 
 Purpose in this website:
 Supply public economic indicator data.
 
-Classification:
-Public open data made available for machine processing and reuse under an open license.
+INDICATORS DISPLAYED
+
+- SELIC target rate: BCData/SGS series 432.
+- IPCA accumulated in the calendar year: monthly BCData/SGS series 433,
+  compounded by the website from January through the latest available month.
+- USD and EUR exchange rates: Banco Central PTAX/Olinda service.
+
+DATA ORIGIN AND LICENSE
+
+The website consumes these public indicators directly from Banco Central do
+Brasil APIs for display; it does not republish a downloadable database. The
+Banco Central open-data portal identifies the ODbL 1.0 license for the SGS
+432 resource and for PTAX resources/datasets, and the portal publishes other
+BCData/SGS resources under the same license. This documents the licensing
+information available for the public data services used by the website.
+
+The specific portal resource page for SGS series 433 was not located during
+this review. The ODbL statement above reflects the official license metadata
+found for the related SGS and PTAX portal resources and is not a claim that a
+separate SGS 433 resource page was individually verified.
+
+License: Open Data Commons Open Database License (ODbL) 1.0
+License text: https://opendatacommons.org/licenses/odbl/1-0/
+
+Attribution:
+Banco Central do Brasil (BCB). Data remains attributed to and subject to the
+terms and responsibilities of its official source. Preserve source
+identification and review applicable ODbL obligations if the project later
+redistributes or combines the underlying datasets.
 
 Review controls:
 - record the exact API endpoints and series identifiers in the project documentation;
@@ -131,3 +166,8 @@ They do not constitute financial, accounting, investment or contracting advice.
 
 Last technical verification:
 2026-09-27
+
+Licensing note reviewed:
+2026-10-23. Based on the official portal resource metadata listed above and
+the project owner's confirmation that the indicators are consumed directly
+from the public APIs for display.

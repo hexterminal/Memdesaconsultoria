@@ -8,7 +8,7 @@
 
   const SERVICES = Object.freeze({
     tawkSource: "https://embed.tawk.to/6ab4612be84b8134496f236b/1k389n53l",
-    clarityProjectId: "",
+    clarityProjectId: "yuoc5tjb2n",
     googleMeasurementId: ""
   });
 
@@ -109,8 +109,20 @@
     const acceptButton = document.getElementById("privacy-accept");
     const necessaryButton = document.getElementById("privacy-necessary");
     const preferencesButton = document.getElementById("open-privacy-preferences");
+    const chatLinks = document.querySelectorAll("[data-open-chat]");
 
     if (!banner || !acceptButton || !necessaryButton) return;
+
+    chatLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        if (window.Tawk_API && typeof window.Tawk_API.maximize === "function") {
+          window.Tawk_API.maximize();
+        } else if (typeof window.openPrivacyPreferences === "function") {
+          window.openPrivacyPreferences();
+        }
+      });
+    });
 
     let previouslyFocusedElement = null;
 

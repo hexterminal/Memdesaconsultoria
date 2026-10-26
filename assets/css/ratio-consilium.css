@@ -400,6 +400,18 @@ header .navbar {
 	height:95vh;
 }
 
+.Modern-Slider .item .img-fill::before {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(90deg, rgba(0,0,0,.82) 0%, rgba(20,20,20,.60) 30%, rgba(30,30,30,.32) 55%, rgba(55,55,55,.12) 100%);
+	content: "";
+	z-index: 1;
+}
+
+.Modern-Slider .item .text-content {
+	z-index: 2;
+}
+
 .Modern-Slider .item-1 .img-fill {
 	background-image: url(../images/slide_01.jpg);
 }
@@ -1260,6 +1272,7 @@ footer .contact-form button.filled-button:hover {
 
 .contact-information {
 	margin-top: 140px;
+	margin-bottom: 90px;
 }
 
 .contact-information .contact-item {
